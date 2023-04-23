@@ -105,9 +105,9 @@ print(FS_MET[-1])
 
 #繪製圖表(折線圖)，紅色為線性搜尋；藍色為二元搜尋；綠色為費氏搜尋
 X = [START_WITH+i*INCREASING_INTERVAL for i in range(ITER_TIMES)]
-plt.plot(X, LS_MET, color='r', marker='o', linestyle='--', linewidth=2, markersize=3)
-plt.plot(X, BS_MET, color='b', marker='o', linestyle='--', linewidth=2, markersize=3)
-plt.plot(X, FS_MET, color='g', marker='o', linestyle='--', linewidth=2, markersize=3)
+plt.plot(X, LS_MET, color='r', linewidth=1)
+plt.plot(X, BS_MET, color='b', linewidth=1)
+plt.plot(X, FS_MET, color='g', linewidth=1)
 plt.xlabel('the size of n',fontsize=10)
 plt.ylabel('time',fontsize=10)
 plt.show()
